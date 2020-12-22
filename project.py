@@ -1,4 +1,5 @@
 # Libraries
+# ====================================================
 import pandas as pd
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
@@ -8,67 +9,77 @@ import re
 import numpy as np
 
 # Data Import
+# ====================================================
 df = pd.read_csv('covid19_tweets.csv',engine='python')
-min(df['date'])
-max(df['date'])
-# Remove useless columns
 
-places = df.user_location.unique()
-ny = [x for x in places if str(x).__contains__('New York')]
-ny
-for place in places:
-    if "NY" in place:
-            print(place)
+# Dropping all useless columns
+df = df.drop(['user_name','user_description','user_followers','user_friends','user_favourites','user_verified','user_location','user_created','source','is_retweet','hashtags'],axis=1)
 
-df = df.drop(['user_name','user_description','user_followers','user_friends','user_favourites','user_verified','user_location','user_created','source','is_retweet'],axis=1)
 # Converts the first column from string to datetime format
 df.date = pd.to_datetime(df.date)
-
-df.to_csv('covid_updated.csv',index=False)
-
-
-from sklearn.feature_extraction.text import TfidfVectorizer
-corpus = list(df.text)
-
-def tokenize_and_stem(tweet):
-    stemmer = SnowballStemmer('english')
-    stopword = set(stopwords.words('english'))
-
-    #Tokenizing
-    frase = [word for sent in nltk.sent_tokenize(tweet) for word in nltk.word_tokenize(sent)]
-    frase = [stemmer.stem(word) for word in frase]
-
-    # Link removal
-    link = re.compile(r'https.*')
-    hashtag = re.compile(r'#.*')
-    alphanum = re.compile(r'\W+')
-    frase = [word for word in frase if not link.match(word)]
-    temp=[]
-    for word in frase:
-        if hashtag.match(word):
-            temp.append(word[1:])
-        else:
-            temp.append(word)
-    #Remove stopwords
-    frase = [word for word in frase if word not in stopword]
-    prova = [word for word in frase if word]
-    return frase,temp
-
-for value in df.loc[:3,'hashtags']:
-    print(value)
+dates = [x.strftime('%Y-%m-%d') for x in df.date]
+df.date = dates
 
 df
-# Check if hashtags are contained inside text
-for row in range(len(df)):
-    if df.loc[row,'hashtags'] is not np.nan:
-        if any(hashtag not in df.loc[row,'text'] for hashtag in df.loc[row,'hashtags']):
-            print('hell '+str(row))
 
+# Saving the new dataset
+df.to_csv('input.csv',index=False)
 
+# Tweet text pre-processing
+# ====================================================
+corpus = list(df.text)
 
-prova = [tokenize_and_stem(sentence) for sentence in corpus]
-tokenize_and_stem(corpus[2])
-tokenize_and_stem("Plays playful playing")
+# Remove internal and final links from tweets
+def remove_links(text):
+    temp = text.split(' ')
+    temp = [re.sub('http.*','',x) for x in temp]
+    return ' '.join(temp)
+
+# Removes symbols, such as #,@,\n,\r,. and ...
+def remove_symbols(text):
+    replacement = (('#', ' '),('@', ' '),('\r', ' '),('\n', ' '),('\.',' '),('â€¦',''))
+    for element in replacement:
+        temp = re.sub(element[0], element[1], text)
+        text = temp
+    return text
+
+# Converts text into list of strings, removes non-alphanumerical characters,
+# converts words to lower case, removes extra symbols and empty strings
+def only_text(text):
+    temp = text.split(' ') # divides string into list of words
+    alphanum = re.compile(r'\W+')
+    temp = [x for x in temp if not alphanum.match(x)] # only alphanum
+    temp = [x.lower() for x in temp if not link.match(x)] # lower case
+    temp = [re.sub(r"[^0-9a-zA-Z-']+", '', x) for x in temp] # removes symbols in words
+    temp = list(filter(None,temp)) # removes empty strings
+    return temp
+
+# Remove stopwords (too common words), after reducing them to the root
+def remove_stopwords(text):
+    stemmer = SnowballStemmer('english')
+    stopword = set(stopwords.words('english'))
+    new_sentence = [stemmer.stem(word) for word in text]
+    new_sentence = [word for word in new_sentence if word not in stopword]
+    return new_sentence
+
+# Text Preprocessing
+def text_processing(text):
+    return remove_stopwords(only_text(remove_symbols(remove_links(text))))
+
+temp = []
+for tweet in df.text:
+    temp.append(text_processing(tweet))
+
+new_columns = {'date':df.date,'text':temp}
+df_new = pd.DataFrame(new_columns)
+#df_new.to_csv('03_processed_dataset.csv',index=False)
+
+df_new = pd.read_csv('03_processed_dataset.csv')
+
+prova = df_new.text
+
+# Apriori algorithm
+# ====================================================
 #!pip install mlxtend # Just in case you do not have it installed yet
 from mlxtend.preprocessing import TransactionEncoder
 
@@ -78,12 +89,21 @@ fi = pd.DataFrame.sparse.from_spmatrix(te_ary, columns=te.columns_)
 
 from mlxtend.frequent_patterns import apriori
 frequent_itemsets = apriori(fi, min_support=0.001,use_colnames=True, low_memory=True)
+frequent_itemsets
 frequent_itemsets.to_csv('frequent_itemsets.csv',index=False)
 
-tokenize_and_stem(corpus[3])
-couples = [list(x) for x in frequent_itemsets['itemsets']]
-[x for x in couples if len(x)>1]
-max(df.date)
+frequent_itemsets = pd.read_csv('frequent_itemsets.csv')
 
 frequent_itemsets['n_items'] = [len(x) for x in frequent_itemsets.itemsets]
+frequent_itemsets
 frequent_itemsets[frequent_itemsets['n_items']>1].sort_values(['support','n_items'],ascending=[False,True])
+
+
+# Associate texts with days.
+df_per_day = df_new.groupby('date').agg(sum);
+df_per_day = df_per_day.reset_index('date');
+
+
+for pair in frequent_itemsets.itemsets:
+    for i in range(len(df_per_day)):
+        if set(pair).issubset(set(df_per_day['te']))
