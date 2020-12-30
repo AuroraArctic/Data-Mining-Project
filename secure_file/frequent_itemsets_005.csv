@@ -1,0 +1,553 @@
+support,itemsets
+0.006085713647631596,frozenset({'across'})
+0.011992764142305202,frozenset({'activ'})
+0.005823302141724546,frozenset({'affect'})
+0.0058456350358442955,frozenset({'alert'})
+0.0050137347298836454,frozenset({'allow'})
+0.009189985930276704,frozenset({'also'})
+0.006621703106505572,frozenset({'america'})
+0.01335507068360989,frozenset({'american'})
+0.005644638988766554,frozenset({'amid'})
+0.010077718471536726,frozenset({'ani'})
+0.007062777765370614,frozenset({'announc'})
+0.008553498447863859,frozenset({'anoth'})
+0.005449226165218751,frozenset({'anyon'})
+0.008464166871384862,frozenset({'around'})
+0.005438059718158876,frozenset({'articl'})
+0.0071521093418496105,frozenset({'ask'})
+0.005354311365209818,frozenset({'aug'})
+0.015990352189740268,frozenset({'august'})
+0.005158898541662014,frozenset({'away'})
+0.005393393929919378,frozenset({'b'})
+0.01497420550729169,frozenset({'back'})
+0.012980994707104093,frozenset({'becaus'})
+0.00557205708287737,frozenset({'becom'})
+0.008374835294905868,frozenset({'befor'})
+0.00512539920048239,frozenset({'believ'})
+0.006833865600643188,frozenset({'best'})
+0.006465372847667329,frozenset({'better'})
+0.005259396565200885,frozenset({'big'})
+0.007995176094870134,frozenset({'break'})
+0.00589588404761373,frozenset({'bring'})
+0.014510797954306898,frozenset({'busi'})
+0.007453603412466221,frozenset({'c'})
+0.011227862518703799,frozenset({'call'})
+0.008938740871429528,"frozenset({""can't""})"
+0.013489068048328383,frozenset({'care'})
+0.09666793219733345,frozenset({'case'})
+0.006560287647676262,frozenset({'caus'})
+0.0067891998124036896,frozenset({'challeng'})
+0.010122384259776225,frozenset({'chang'})
+0.008653996471402728,frozenset({'check'})
+0.009837639859749425,frozenset({'children'})
+0.00786117873015164,frozenset({'china'})
+0.0065379547535565135,frozenset({'citi'})
+0.00859258101257342,frozenset({'close'})
+0.012897246354155035,frozenset({'come'})
+0.010183799718605535,frozenset({'communiti'})
+0.005588806753467182,frozenset({'compani'})
+0.013829644683654555,frozenset({'confirm'})
+0.0057842195770149854,frozenset({'contact'})
+0.01082028720101838,frozenset({'continu'})
+0.005465975835808563,frozenset({'control'})
+0.010675123389240012,frozenset({'corona'})
+0.07972843200750385,frozenset({'coronavirus'})
+0.006917613953592246,frozenset({'coronavirusupd'})
+0.0117526855305179,frozenset({'could'})
+0.0062252942358800275,frozenset({'counti'})
+0.019591531366549793,frozenset({'countri'})
+0.005209147553431449,frozenset({'cover'})
+0.6004533577506309,frozenset({'covid'})
+0.005253813341670947,frozenset({'creat'})
+0.008944324094959466,frozenset({'crisi'})
+0.00530964557697032,frozenset({'cross'})
+0.005968465953502915,frozenset({'current'})
+0.012752082542376666,frozenset({'daili'})
+0.010803537530428568,frozenset({'data'})
+0.03268419054425263,frozenset({'day'})
+0.006956696518301807,frozenset({'dead'})
+0.05363244522857717,frozenset({'death'})
+0.007810929718382205,frozenset({'develop'})
+0.018932710990017195,frozenset({'die'})
+0.005253813341670947,frozenset({'differ'})
+0.006962279741831744,frozenset({'discuss'})
+0.005002568282823771,frozenset({'diseas'})
+0.007542934988945218,frozenset({'distanc'})
+0.006683118565334881,frozenset({'doctor'})
+0.00759876722424459,frozenset({'doe'})
+0.00534872814167988,frozenset({'done'})
+0.008748911271411662,frozenset({'dr'})
+0.016263930142707193,frozenset({'due'})
+0.030367152779328672,frozenset({'dure'})
+0.005678138329946178,frozenset({'econom'})
+0.0065714540947361365,frozenset({'economi'})
+0.00634254193000871,frozenset({'educ'})
+0.007755097483082832,frozenset({'effect'})
+0.006872948165352748,frozenset({'end'})
+0.015990352189740268,frozenset({'even'})
+0.009703642495030931,frozenset({'everi'})
+0.008240837930187372,frozenset({'everyon'})
+0.005644638988766554,frozenset({'expert'})
+0.01359514929539719,frozenset({'face'})
+0.011093865153985305,frozenset({'famili'})
+0.00508631663577283,frozenset({'far'})
+0.0072470241418585435,frozenset({'feel'})
+0.010462960895102397,frozenset({'fight'})
+0.009050405342028273,frozenset({'find'})
+0.01649284230743462,frozenset({'first'})
+0.010831453648078254,frozenset({'follow'})
+0.005343144918149943,frozenset({'food'})
+0.007509435647765594,frozenset({'free'})
+0.006247627129999777,frozenset({'friend'})
+0.005181231435781763,frozenset({'full'})
+0.03383991781494964,frozenset({'get'})
+0.008453000424324989,frozenset({'give'})
+0.014131138754271166,frozenset({'global'})
+0.02556558054358264,frozenset({'go'})
+0.013952475601313174,frozenset({'good'})
+0.0073084396006878535,frozenset({'got'})
+0.015901020613261273,frozenset({'govern'})
+0.005002568282823771,frozenset({'govt'})
+0.00978739084797999,frozenset({'great'})
+0.006521205082966702,frozenset({'hand'})
+0.0065547044241463254,frozenset({'happen'})
+0.02858610447327869,frozenset({'health'})
+0.0057674699064251735,frozenset({'healthcar'})
+0.02711213346137526,frozenset({'help'})
+0.0070739442124304885,frozenset({'high'})
+0.005415726824039127,frozenset({'hit'})
+0.015041204189650936,frozenset({'home'})
+0.007699265247783461,frozenset({'hope'})
+0.016420260401545435,frozenset({'hospit'})
+0.0131317417424124,frozenset({'hour'})
+0.005203564329901512,frozenset({'human'})
+0.012137927954083569,"frozenset({""i'm""})"
+0.011641021059919154,frozenset({'impact'})
+0.010217299059785157,frozenset({'import'})
+0.008503249436094424,frozenset({'includ'})
+0.010289880965674342,frozenset({'increas'})
+0.025649328896531702,frozenset({'india'})
+0.014722960448444514,frozenset({'infect'})
+0.006202961341760279,frozenset({'inform'})
+0.005946133059383165,frozenset({'issu'})
+0.007956093530160574,frozenset({'job'})
+0.00877124416553141,frozenset({'join'})
+0.010306630636264153,frozenset({'juli'})
+0.00634254193000871,frozenset({'k'})
+0.01327132233066083,frozenset({'keep'})
+0.008346919177256181,frozenset({'kid'})
+0.006655202447685195,frozenset({'kill'})
+0.0185586350135114,frozenset({'know'})
+0.02066909350782768,frozenset({'last'})
+0.010931951671617125,frozenset({'latest'})
+0.005622306094646806,frozenset({'leader'})
+0.009413314871474194,frozenset({'learn'})
+0.01207651249525426,frozenset({'let'})
+0.008743328047881724,frozenset({'life'})
+0.026308149273064296,frozenset({'like'})
+0.01856421823704134,frozenset({'live'})
+0.006627286330035509,frozenset({'local'})
+0.01566652522500391,frozenset({'lockdown'})
+0.005644638988766554,frozenset({'long'})
+0.016375594613305938,frozenset({'look'})
+0.00877124416553141,frozenset({'love'})
+0.0066328695535654465,frozenset({'made'})
+0.01916720637827456,frozenset({'make'})
+0.005103066306362642,frozenset({'man'})
+0.006169462000580655,frozenset({'manag'})
+0.01784956562520937,frozenset({'mani'})
+0.00534872814167988,frozenset({'market'})
+0.03461040266208098,frozenset({'mask'})
+0.011384192777542042,frozenset({'may'})
+0.005426893271099002,frozenset({'mean'})
+0.005532974518167809,frozenset({'measur'})
+0.00585680148290417,frozenset({'media'})
+0.007297273153627978,frozenset({'medic'})
+0.00508631663577283,frozenset({'meet'})
+0.005426893271099002,frozenset({'member'})
+0.01229984143645175,frozenset({'million'})
+0.007230274471268732,frozenset({'minist'})
+0.011239028965763674,frozenset({'month'})
+0.005008151506353709,frozenset({'morn'})
+0.008464166871384862,frozenset({'much'})
+0.008838242847890658,frozenset({'must'})
+0.009346316189114948,frozenset({'nation'})
+0.02986466266163432,frozenset({'need'})
+0.006331375482948836,frozenset({'never'})
+0.07330772494807603,frozenset({'new'})
+0.01903320901355607,frozenset({'news'})
+0.006744534024164191,frozenset({'next'})
+0.02052951291957925,frozenset({'number'})
+0.00534872814167988,frozenset({'odisha'})
+0.005739553788775487,frozenset({'offic'})
+0.007353105388927351,frozenset({'offici'})
+0.028982513343904236,frozenset({'one'})
+0.015543694307345288,frozenset({'onli'})
+0.007079527435960426,frozenset({'onlin'})
+0.009195569153806642,frozenset({'open'})
+0.005432476494628939,frozenset({'order'})
+0.006309042588829086,frozenset({'outbreak'})
+0.0055162248475779975,frozenset({'p'})
+0.04718940527502959,frozenset({'pandem'})
+0.008034258659579695,frozenset({'part'})
+0.014058556848381983,frozenset({'patient'})
+0.0518234808048775,frozenset({'peopl'})
+0.006214127788820153,frozenset({'per'})
+0.008921991200839717,frozenset({'person'})
+0.006336958706478772,frozenset({'place'})
+0.01025079840096478,frozenset({'plan'})
+0.005985215624092727,frozenset({'play'})
+0.014125555530741228,frozenset({'pleas'})
+0.008553498447863859,frozenset({'pm'})
+0.02906067847332336,frozenset({'posit'})
+0.007609933671304464,frozenset({'post'})
+0.007576434330124841,frozenset({'presid'})
+0.006309042588829086,frozenset({'prevent'})
+0.01136744310695223,frozenset({'protect'})
+0.007838845836031892,frozenset({'provid'})
+0.012003930589365075,frozenset({'public'})
+0.007392187953636912,frozenset({'put'})
+0.007531768541885343,frozenset({'quarantin'})
+0.00514773209460214,frozenset({'question'})
+0.005465975835808563,frozenset({'r'})
+0.010853786542198004,frozenset({'rate'})
+0.015113786095540122,frozenset({'read'})
+0.0053263952475601315,frozenset({'real'})
+0.021813654331464816,frozenset({'realdonaldtrump'})
+0.007816512941912143,frozenset({'realli'})
+0.010675123389240012,frozenset({'record'})
+0.011897849342296268,frozenset({'recov'})
+0.011562855930500033,frozenset({'recoveri'})
+0.00502490117694352,frozenset({'rememb'})
+0.007180025459499297,frozenset({'reopen'})
+0.037452263438819036,frozenset({'report'})
+0.00776068070661277,frozenset({'research'})
+0.012478504589409741,frozenset({'respons'})
+0.007542934988945218,frozenset({'result'})
+0.0059238001652634166,frozenset({'return'})
+0.011021283248096122,frozenset({'right'})
+0.009452397436183755,frozenset({'rise'})
+0.012718583201197044,frozenset({'risk'})
+0.0057674699064251735,frozenset({'russia'})
+0.012791165107086227,frozenset({'safe'})
+0.005158898541662014,frozenset({'safeti'})
+0.009413314871474194,frozenset({'said'})
+0.024058110190499585,frozenset({'say'})
+0.02040668200192063,frozenset({'school'})
+0.01635326171918619,frozenset({'see'})
+0.006699868235924693,frozenset({'servic'})
+0.005041650847533332,frozenset({'set'})
+0.009904638542108673,frozenset({'share'})
+0.011283694754003171,frozenset({'show'})
+0.007168859012439422,frozenset({'sign'})
+0.011317194095182795,frozenset({'sinc'})
+0.006297876141769212,frozenset({'situat'})
+0.00537106103579963,frozenset({'slow'})
+0.010306630636264153,frozenset({'social'})
+0.0051700649887218885,frozenset({'south'})
+0.007219108024208857,frozenset({'spike'})
+0.018631216919400586,frozenset({'spread'})
+0.005426893271099002,frozenset({'st'})
+0.005449226165218751,frozenset({'staff'})
+0.01092078522455725,frozenset({'start'})
+0.021500993813788328,frozenset({'state'})
+0.010239631953904907,frozenset({'stay'})
+0.01485137458963307,frozenset({'still'})
+0.010256381624494718,frozenset({'stop'})
+0.009871139200929049,frozenset({'student'})
+0.007637849788954151,frozenset({'studi'})
+0.013248989436541082,frozenset({'support'})
+0.005840051812314358,frozenset({'sure'})
+0.007699265247783461,frozenset({'symptom'})
+0.005756303459365299,frozenset({'system'})
+0.022355227013868727,frozenset({'take'})
+0.007515018871295531,frozenset({'talk'})
+0.007408937624226723,frozenset({'talli'})
+0.006376041271188333,frozenset({'team'})
+0.007135359671259799,frozenset({'tell'})
+0.049204948969336935,frozenset({'test'})
+0.015733523907363156,frozenset({'th'})
+0.012841414118855662,frozenset({'thank'})
+0.009988386895057731,frozenset({'thing'})
+0.013321571342430265,frozenset({'think'})
+0.005225897224021261,frozenset({'thought'})
+0.02719029859079438,frozenset({'time'})
+0.02899367979096411,frozenset({'today'})
+0.0055162248475779975,frozenset({'toll'})
+0.006705451459454631,frozenset({'top'})
+0.025180338120016972,frozenset({'total'})
+0.0072470241418585435,frozenset({'travel'})
+0.007174442235969359,frozenset({'tri'})
+0.021914152355003685,frozenset({'trump'})
+0.00792259418898095,frozenset({'two'})
+0.009396565200884383,frozenset({'u'})
+0.009686892824441119,frozenset({'uk'})
+0.024504768072894565,frozenset({'updat'})
+0.035112892779775334,frozenset({'us'})
+0.006186211671170467,frozenset({'usa'})
+0.01789423141344887,frozenset({'use'})
+0.02245014181387766,frozenset({'vaccin'})
+0.00897782343613909,frozenset({'veri'})
+0.013511400942448131,frozenset({'via'})
+0.007230274471268732,frozenset({'video'})
+0.016247180472117383,frozenset({'virus'})
+0.00502490117694352,frozenset({'visit'})
+0.008374835294905868,frozenset({'w'})
+0.013896643366013801,frozenset({'want'})
+0.010451794448042522,frozenset({'watch'})
+0.013053576612993278,frozenset({'way'})
+0.007101860330080175,"frozenset({""we'r""})"
+0.017983562989927863,frozenset({'wear'})
+0.016236014025057508,frozenset({'week'})
+0.009418898095004131,frozenset({'well'})
+0.01973669517832816,frozenset({'whi'})
+0.005907050494673605,frozenset({'without'})
+0.022628804966835652,frozenset({'work'})
+0.008134756683118565,frozenset({'worker'})
+0.02090917211961498,frozenset({'world'})
+0.01268508386001742,frozenset({'would'})
+0.015448779507336356,frozenset({'year'})
+0.005404560376979253,frozenset({'yesterday'})
+0.00585680148290417,frozenset({'yet'})
+0.005901467271143668,"frozenset({""you'r""})"
+0.008118007012528754,"frozenset({'activ', 'case'})"
+0.008720995153761976,"frozenset({'activ', 'covid'})"
+0.008492082989034548,"frozenset({'covid', 'american'})"
+0.005493891953458249,"frozenset({'case', 'august'})"
+0.010842620095138129,"frozenset({'august', 'covid'})"
+0.007397771177166849,"frozenset({'covid', 'back'})"
+0.006811532706523438,"frozenset({'becaus', 'covid'})"
+0.0051533153181320766,"frozenset({'break', 'covid'})"
+0.007487102753645845,"frozenset({'covid', 'busi'})"
+0.00514773209460214,"frozenset({'call', 'covid'})"
+0.007291689930098042,"frozenset({'care', 'covid'})"
+0.010624874377470577,"frozenset({'case', 'confirm'})"
+0.01754807155459276,"frozenset({'case', 'coronavirus'})"
+0.005041650847533332,"frozenset({'case', 'coronavirusupd'})"
+0.07902494584273176,"frozenset({'case', 'covid'})"
+0.006426290282957769,"frozenset({'case', 'daili'})"
+0.0065658708712062,"frozenset({'case', 'day'})"
+0.02614065256716618,"frozenset({'case', 'death'})"
+0.007905844518391138,"frozenset({'case', 'hour'})"
+0.01223842597762244,"frozenset({'case', 'india'})"
+0.009714808942090805,"frozenset({'case', 'last'})"
+0.03626862005047234,"frozenset({'case', 'new'})"
+0.008330169506666369,"frozenset({'number', 'case'})"
+0.00885499251848047,"frozenset({'case', 'posit'})"
+0.005974049177032851,"frozenset({'record', 'case'})"
+0.02158474216673739,"frozenset({'case', 'report'})"
+0.005197981106371575,"frozenset({'case', 'rise'})"
+0.005622306094646806,"frozenset({'case', 'spike'})"
+0.006214127788820153,"frozenset({'case', 'talli'})"
+0.00731402282421779,"frozenset({'case', 'today'})"
+0.01793331397815843,"frozenset({'case', 'total'})"
+0.00881590995377091,"frozenset({'case', 'updat'})"
+0.006309042588829086,"frozenset({'covid', 'chang'})"
+0.005465975835808563,"frozenset({'children', 'covid'})"
+0.005097483082832704,"frozenset({'china', 'covid'})"
+0.006549121200616388,"frozenset({'come', 'covid'})"
+0.005974049177032851,"frozenset({'communiti', 'covid'})"
+0.009999553342117605,"frozenset({'confirm', 'covid'})"
+0.006454206400607455,"frozenset({'continu', 'covid'})"
+0.007124193224199924,"frozenset({'corona', 'covid'})"
+0.056156062264108804,"frozenset({'coronavirus', 'covid'})"
+0.00934073296558501,"frozenset({'coronavirus', 'death'})"
+0.013142908189472273,"frozenset({'coronavirus', 'new'})"
+0.005460392612278625,"frozenset({'coronavirus', 'news'})"
+0.007649016236014025,"frozenset({'coronavirus', 'pandem'})"
+0.006336958706478772,"frozenset({'coronavirus', 'updat'})"
+0.006593786988855886,"frozenset({'coronavirusupd', 'covid'})"
+0.006644036000625321,"frozenset({'could', 'covid'})"
+0.012026263483484824,"frozenset({'countri', 'covid'})"
+0.006939946847711995,"frozenset({'crisi', 'covid'})"
+0.00996605400093798,"frozenset({'daili', 'covid'})"
+0.0076713491301337745,"frozenset({'covid', 'data'})"
+0.019357035978292428,"frozenset({'day', 'covid'})"
+0.041109274850927933,"frozenset({'covid', 'death'})"
+0.01411997230721129,"frozenset({'die', 'covid'})"
+0.012696250307077293,"frozenset({'due', 'covid'})"
+0.022042566496192243,"frozenset({'dure', 'covid'})"
+0.01018938294213547,"frozenset({'covid', 'even'})"
+0.006962279741831744,"frozenset({'face', 'covid'})"
+0.005488308729928311,"frozenset({'famili', 'covid'})"
+0.007827679388972017,"frozenset({'fight', 'covid'})"
+0.010306630636264153,"frozenset({'first', 'covid'})"
+0.005315228800500257,"frozenset({'follow', 'covid'})"
+0.017860732072269247,"frozenset({'get', 'covid'})"
+0.008335752730196306,"frozenset({'global', 'covid'})"
+0.012606918730598299,"frozenset({'go', 'covid'})"
+0.007291689930098042,"frozenset({'good', 'covid'})"
+0.007442436965406347,"frozenset({'govern', 'covid'})"
+0.01606851731915939,"frozenset({'health', 'covid'})"
+0.015739107130893094,"frozenset({'help', 'covid'})"
+0.008464166871384862,"frozenset({'covid', 'home'})"
+0.010496460236282019,"frozenset({'hospit', 'covid'})"
+0.01047412734216227,"frozenset({'hour', 'covid'})"
+0.005639055765236617,"frozenset({""i'm"", 'covid'})"
+0.009474730330303504,"frozenset({'covid', 'impact'})"
+0.005454809388748688,"frozenset({'import', 'covid'})"
+0.005281729459320633,"frozenset({'includ', 'covid'})"
+0.006973446188891619,"frozenset({'increas', 'covid'})"
+0.020362016213681132,"frozenset({'covid', 'india'})"
+0.010786787859838757,"frozenset({'infect', 'covid'})"
+0.007029278424190991,"frozenset({'juli', 'covid'})"
+0.0070571945418406775,"frozenset({'covid', 'keep'})"
+0.009480313553833442,"frozenset({'know', 'covid'})"
+0.01404180717779217,"frozenset({'last', 'covid'})"
+0.007364271835987226,"frozenset({'latest', 'covid'})"
+0.005047234071063269,"frozenset({'covid', 'learn'})"
+0.006242043906469839,"frozenset({'covid', 'let'})"
+0.013734729883645621,"frozenset({'like', 'covid'})"
+0.009547312236192687,"frozenset({'live', 'covid'})"
+0.009859972753869174,"frozenset({'covid', 'lockdown'})"
+0.008257587600777185,"frozenset({'look', 'covid'})"
+0.0090392388949684,"frozenset({'make', 'covid'})"
+0.010021886236237353,"frozenset({'mani', 'covid'})"
+0.017581570895772385,"frozenset({'mask', 'covid'})"
+0.006403957388838019,"frozenset({'covid', 'may'})"
+0.007475936306585971,"frozenset({'covid', 'million'})"
+0.005907050494673605,"frozenset({'month', 'covid'})"
+0.005002568282823771,"frozenset({'nation', 'covid'})"
+0.015962436072090583,"frozenset({'need', 'covid'})"
+0.05262188176965853,"frozenset({'new', 'covid'})"
+0.01149027402461085,"frozenset({'news', 'covid'})"
+0.014823458471983384,"frozenset({'number', 'covid'})"
+0.015225450566138866,"frozenset({'one', 'covid'})"
+0.007866761953681578,"frozenset({'covid', 'onli'})"
+0.032980101391339306,"frozenset({'pandem', 'covid'})"
+0.011227862518703799,"frozenset({'patient', 'covid'})"
+0.027569957790830112,"frozenset({'peopl', 'covid'})"
+0.005331978471090068,"frozenset({'plan', 'covid'})"
+0.006817115930053376,"frozenset({'pleas', 'covid'})"
+0.005052817294593206,"frozenset({'pm', 'covid'})"
+0.024086026308149273,"frozenset({'posit', 'covid'})"
+0.006398374165308082,"frozenset({'protect', 'covid'})"
+0.005661388659356366,"frozenset({'public', 'covid'})"
+0.007531768541885343,"frozenset({'rate', 'covid'})"
+0.008453000424324989,"frozenset({'read', 'covid'})"
+0.011395359224601916,"frozenset({'realdonaldtrump', 'covid'})"
+0.008011925765459947,"frozenset({'record', 'covid'})"
+0.008503249436094424,"frozenset({'recov', 'covid'})"
+0.008413917859615427,"frozenset({'recoveri', 'covid'})"
+0.028318109743841705,"frozenset({'covid', 'report'})"
+0.008581414565513545,"frozenset({'covid', 'respons'})"
+0.005047234071063269,"frozenset({'right', 'covid'})"
+0.007542934988945218,"frozenset({'rise', 'covid'})"
+0.00907832145967796,"frozenset({'risk', 'covid'})"
+0.007174442235969359,"frozenset({'safe', 'covid'})"
+0.013723563436585748,"frozenset({'say', 'covid'})"
+0.010368046095093463,"frozenset({'school', 'covid'})"
+0.008190588918417938,"frozenset({'see', 'covid'})"
+0.006242043906469839,"frozenset({'show', 'covid'})"
+0.00650445541237689,"frozenset({'sinc', 'covid'})"
+0.006292292918239274,"frozenset({'spike', 'covid'})"
+0.015035620966121,"frozenset({'spread', 'covid'})"
+0.005225897224021261,"frozenset({'start', 'covid'})"
+0.012897246354155035,"frozenset({'state', 'covid'})"
+0.0058623847064341065,"frozenset({'stay', 'covid'})"
+0.008486499765504613,"frozenset({'still', 'covid'})"
+0.006242043906469839,"frozenset({'covid', 'stop'})"
+0.005728387341715613,"frozenset({'support', 'covid'})"
+0.00654353797708645,"frozenset({'covid', 'symptom'})"
+0.012567836165888737,"frozenset({'take', 'covid'})"
+0.006895281059472497,"frozenset({'talli', 'covid'})"
+0.039384058780177325,"frozenset({'test', 'covid'})"
+0.008324586283136431,"frozenset({'th', 'covid'})"
+0.006493288965317015,"frozenset({'covid', 'thank'})"
+0.005114232753422516,"frozenset({'covid', 'thing'})"
+0.006593786988855886,"frozenset({'think', 'covid'})"
+0.014125555530741228,"frozenset({'time', 'covid'})"
+0.017464323201643702,"frozenset({'covid', 'today'})"
+0.01840230475467316,"frozenset({'total', 'covid'})"
+0.011819684212877147,"frozenset({'trump', 'covid'})"
+0.0052482301181410096,"frozenset({'u', 'covid'})"
+0.006013131741742412,"frozenset({'uk', 'covid'})"
+0.018413471201733034,"frozenset({'updat', 'covid'})"
+0.01953569913125042,"frozenset({'us', 'covid'})"
+0.008927574424369655,"frozenset({'covid', 'use'})"
+0.01764298635460169,"frozenset({'vaccin', 'covid'})"
+0.009519396118543001,"frozenset({'via', 'covid'})"
+0.009686892824441119,"frozenset({'virus', 'covid'})"
+0.0065658708712062,"frozenset({'want', 'covid'})"
+0.006230877459409965,"frozenset({'watch', 'covid'})"
+0.007252607365388481,"frozenset({'way', 'covid'})"
+0.00840833463608549,"frozenset({'wear', 'covid'})"
+0.008458583647854926,"frozenset({'week', 'covid'})"
+0.00514773209460214,"frozenset({'well', 'covid'})"
+0.010462960895102397,"frozenset({'whi', 'covid'})"
+0.01108269870692543,"frozenset({'work', 'covid'})"
+0.012489671036469616,"frozenset({'world', 'covid'})"
+0.005974049177032851,"frozenset({'would', 'covid'})"
+0.0072470241418585435,"frozenset({'year', 'covid'})"
+0.006577037318266074,"frozenset({'india', 'death'})"
+0.006364874824128459,"frozenset({'last', 'death'})"
+0.014516381177836836,"frozenset({'new', 'death'})"
+0.01193693190700583,"frozenset({'report', 'death'})"
+0.00972597538915068,"frozenset({'total', 'death'})"
+0.005108649529892578,"frozenset({'distanc', 'social'})"
+0.007900261294861202,"frozenset({'dure', 'pandem'})"
+0.0053598945887397545,"frozenset({'face', 'mask'})"
+0.007950510306630637,"frozenset({'hour', 'last'})"
+0.014125555530741228,"frozenset({'wear', 'mask'})"
+0.01562185943676441,"frozenset({'new', 'report'})"
+0.005527391294637872,"frozenset({'new', 'today'})"
+0.009296067177345511,"frozenset({'total', 'new'})"
+0.005415726824039127,"frozenset({'number', 'total'})"
+0.014756459789624138,"frozenset({'test', 'posit'})"
+0.007079527435960426,"frozenset({'total', 'report'})"
+0.0065547044241463254,"frozenset({'activ', 'case', 'covid'})"
+0.007956093530160574,"frozenset({'case', 'confirm', 'covid'})"
+0.01211559505996382,"frozenset({'case', 'coronavirus', 'covid'})"
+0.006269960024119526,"frozenset({'case', 'coronavirus', 'death'})"
+0.008899658306719968,"frozenset({'case', 'coronavirus', 'new'})"
+0.00579538602407486,"frozenset({'case', 'daili', 'covid'})"
+0.005214730776961387,"frozenset({'case', 'day', 'covid'})"
+0.019725528731268285,"frozenset({'case', 'covid', 'death'})"
+0.0071521093418496105,"frozenset({'case', 'hour', 'covid'})"
+0.010892869106907564,"frozenset({'case', 'covid', 'india'})"
+0.008011925765459947,"frozenset({'case', 'last', 'covid'})"
+0.030579315273466287,"frozenset({'case', 'new', 'covid'})"
+0.006934363624182057,"frozenset({'number', 'case', 'covid'})"
+0.008263170824307123,"frozenset({'case', 'posit', 'covid'})"
+0.005008151506353709,"frozenset({'record', 'case', 'covid'})"
+0.018245974495834916,"frozenset({'case', 'covid', 'report'})"
+0.005119815976952454,"frozenset({'case', 'spike', 'covid'})"
+0.0058456350358442955,"frozenset({'case', 'talli', 'covid'})"
+0.006616119882975635,"frozenset({'case', 'covid', 'today'})"
+0.013891060142483865,"frozenset({'case', 'total', 'covid'})"
+0.006364874824128459,"frozenset({'case', 'updat', 'covid'})"
+0.005426893271099002,"frozenset({'case', 'india', 'death'})"
+0.005259396565200885,"frozenset({'case', 'last', 'death'})"
+0.012528753601179176,"frozenset({'case', 'new', 'death'})"
+0.009033655671438462,"frozenset({'report', 'case', 'death'})"
+0.007883511624271389,"frozenset({'case', 'total', 'death'})"
+0.006348125153538647,"frozenset({'case', 'hour', 'last'})"
+0.013539317060097818,"frozenset({'case', 'new', 'report'})"
+0.008659579694932666,"frozenset({'case', 'total', 'new'})"
+0.006510038635906827,"frozenset({'case', 'total', 'report'})"
+0.00583446858878442,"frozenset({'coronavirus', 'covid', 'death'})"
+0.010116801036246287,"frozenset({'coronavirus', 'new', 'covid'})"
+0.0052649797887308215,"frozenset({'coronavirus', 'pandem', 'covid'})"
+0.005800969247604797,"frozenset({'covid', 'india', 'death'})"
+0.011568439154029971,"frozenset({'new', 'covid', 'death'})"
+0.009346316189114948,"frozenset({'report', 'covid', 'death'})"
+0.0068226991535833125,"frozenset({'total', 'covid', 'death'})"
+0.0054827255063983745,"frozenset({'dure', 'pandem', 'covid'})"
+0.00733635571833754,"frozenset({'hour', 'last', 'covid'})"
+0.006861781718292874,"frozenset({'wear', 'mask', 'covid'})"
+0.012634834848247985,"frozenset({'new', 'covid', 'report'})"
+0.007168859012439422,"frozenset({'total', 'new', 'covid'})"
+0.012411505907050495,"frozenset({'test', 'posit', 'covid'})"
+0.005415726824039127,"frozenset({'total', 'covid', 'report'})"
+0.0061917948947004045,"frozenset({'report', 'new', 'death'})"
+0.005292895906380508,"frozenset({'total', 'new', 'report'})"
+0.006967862965361681,"frozenset({'case', 'coronavirus', 'new', 'covid'})"
+0.00988788887151886,"frozenset({'case', 'new', 'covid', 'death'})"
+0.006934363624182057,"frozenset({'report', 'case', 'covid', 'death'})"
+0.005438059718158876,"frozenset({'case', 'total', 'covid', 'death'})"
+0.00595729950644304,"frozenset({'case', 'hour', 'last', 'covid'})"
+0.011127364495164929,"frozenset({'case', 'new', 'covid', 'report'})"
+0.006671952118275007,"frozenset({'case', 'total', 'new', 'covid'})"
+0.005114232753422516,"frozenset({'case', 'total', 'covid', 'report'})"
+0.005488308729928311,"frozenset({'report', 'case', 'new', 'death'})"
+0.005181231435781763,"frozenset({'case', 'total', 'new', 'report'})"
