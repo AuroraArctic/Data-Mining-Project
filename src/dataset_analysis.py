@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 import pickle
 
+# Find the most common word in the cleaned dataset
 df = pickle.load(open('../data/input','rb'))
 temp = []
 for l in df.text:
@@ -38,7 +39,16 @@ fig.update_layout(
     )
 )
 
+df_day = df.groupby('date').sum()
+df_day['item'] = [len(x) for x in df_day.text]
+df_day = df_day.reset_index()
+df_day.sort_values('item',ascending=False)
 
+# Days in which we can find the highest number of tweets
+df = pd.read_csv('../data/covid19_tweets.csv')
+import datetime
+df['date'] = pd.to_datetime(df.created_at,format='%Y-%m-%d').dt.date
+df.groupby('date').count()['tweet']
 
 
 # Clustering
