@@ -14,16 +14,13 @@ import datetime as dt
 df_name = 'covid19_tweets.csv'
 def import_dataset(name):
     df = pd.read_csv(name,engine='python')
-    df = df[['date','text']]
+    df = df[['created_at','tweet']]
+    df = df.rename(columns={'created_at':'date','tweet':'text'})
     df.date = pd.to_datetime(df["date"]).dt.strftime('%Y-%m-%d')
     return df
 
-# Saving the new dataset
-#df.to_csv('input.csv',index=False)
-df = import_dataset(df_name)
 # Tweet text pre-processing
 # ====================================================
-corpus = list(df.text)
 
 # Remove internal and final links from tweets
 def remove_links(text):
@@ -58,15 +55,23 @@ def remove_stopwords(text):
     new_sentence = [word for word in new_sentence if word not in stopword]
     return new_sentence
 
-# Text Preprocessing
+# Text Preprocessing of the single tweet
 def text_processing(text):
     return remove_stopwords(only_text(remove_symbols(remove_links(text))))
 
+# Cleaning of the column text
 def clean_tweets(df):
     temp = []
     for tweet in df.text:
         temp.append(text_processing(tweet))
     new_columns = {'date':df.date,'text':temp}
     df_new = pd.DataFrame(new_columns)
-    df_new.to_csv('clean_dataset.csv',index=False)
+    df_new.to_csv('USA_election_2020/clean_dataset.csv',index=False)
     return df_new
+
+# Saving the new dataset
+df = clean_tweets(import_dataset(df_name))
+df.to_csv('../data/input.csv',index=False) # Saving as csv to be readable
+import pickle
+with open('../data/input','wb') as f:
+    pickle.dump(df,f)
