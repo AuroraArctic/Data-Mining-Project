@@ -73,9 +73,11 @@ def find_topics(df,support,lines,days,min_items,max_items):
     print('File saved.')
 
     # Printing only the requested number of n_items
-    if lines==0 or lines >len(final):
-        lines=len(final)
-    print(final[:lines])
+    if lines!=0:
+        if lines >len(final):
+            lines=len(final)
+        else:
+            print(final[:lines])
     return final[:lines]
 
 
@@ -90,15 +92,15 @@ for user_input in argv:
     if "=" not in user_input:
         continue
     varname = user_input.split("=")[0]
-    varvalue = user_input.split("=")[1] 
+    varvalue = user_input.split("=")[1]
     parameter_dict[varname] = varvalue
 
 # Default values
-support=0.01
+support=0.02
 lines=0
 days=1
 min_items = 1
-max_items = 5
+max_items = 4
 
 # Setting values inserted by the user
 total_param = ['lines','support','days','min_items','max_items']

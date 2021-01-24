@@ -8,50 +8,51 @@ import nltk
 import re
 import numpy as np
 from scipy import sparse
+import pickle
+import time
 
-df_new = pd.read_csv('secure_file/03_processed_dataset.csv')
-# Reading lists not as strings
-from ast import literal_eval
-df_new.text = [literal_eval(x) for x in df_new.text]
-
-prova = df_new.text
+# Data Import
+df = pickle.load(open('../data/input_files/input','rb'))
+tweets = df.text
 
 # Frequent itemsets algorithms
 # ====================================================
 
+timings = {'Apriori mlxtend':[],
+           'Apriori efficient': [],
+           'Fp-growth':[]}
+
 # Sparse matrix generation
 #!pip install mlxtend
 from mlxtend.preprocessing import TransactionEncoder
+
 te = TransactionEncoder()
-te_ary = te.fit(prova).transform(prova,sparse=True)
+te_ary = te.fit(tweets).transform(tweets,sparse=True)
+apriori_input = pd.DataFrame.sparse.from_spmatrix(te_ary, columns=te.columns_)
 
-fi = pd.DataFrame.sparse.from_spmatrix(te_ary, columns=te.columns_)
+# 1. Apriori algorithm of mlxtend (the one I used)
+def compute_apriori_mlxtend():
+    from mlxtend.frequent_patterns import apriori
 
-timings = {}
-# 1. Apriori algorithm
-from mlxtend.frequent_patterns import apriori
-import time
+    start_time = time.time()
+    frequent_itemsets = apriori(apriori_input, min_support=0.01,use_colnames=True,low_memory=True)
+    timings['Apriori mlxtend'].append(time.time() - start_time)
+    frequent_itemsets['n_items'] = [len(x) for x in frequent_itemsets.itemsets]
 
-start_time = time.time()
-frequent_itemsets = apriori(fi, min_support=0.01,use_colnames=True), #low_memory=True)
-timings['Apriori_no_low'] = time.time() - start_time
-timings
-frequent_itemsets
-#frequent_itemsets
-#frequent_itemsets.to_csv('frequent_itemsets_005.csv',index=False)
-
-#frequent_itemsets = pd.read_csv('frequent_itemsets.csv')
-frequent_itemsets['n_items'] = [len(x) for x in frequent_itemsets.itemsets]
+    return frequent_itemsets
 
 # 2. Efficient apriori
 #pip install efficient-apriori
-transactions = [tuple(x) for x in prova]
-from efficient_apriori import apriori
+def compute_efficient_apriori():
+    transactions = [tuple(x) for x in tweets]
+    from efficient_apriori import apriori
 
-start_time = time.time()
-itemsets, rules = apriori(transactions,min_support=0.012,min_confidence=0.8)
-timings['Efficient Apriori_15'] = time.time() - start_time
-timings
+    start_time = time.time()
+    itemsets, rules = apriori(transactions,min_support=0.01,min_confidence=0.8)
+    timings['Apriori efficient'].append(time.time() - start_time)
+    item_found = convert_result_to_df(itemsets)
+
+    return item_found
 
 def convert_result_to_df(itemsets):
     length = []
@@ -69,22 +70,27 @@ def convert_result_to_df(itemsets):
     res.itemset = itemset
     return res
 
-item_found = convert_result_to_df(itemsets)
-
 # 3. FP-growth
-from mlxtend.frequent_patterns import fpgrowth
-start_time = time.time()
-fp_result = fpgrowth(fi, min_support=0.05,use_colnames=True)
-fpgrowth(fi, min_support=0.01,use_colnames=True)
-timings['FP-Growth_1'] = time.time() - start_time
+def compute_fp_growth():
+    from mlxtend.frequent_patterns import fpgrowth
+    start_time = time.time()
+    fp_result = fpgrowth(apriori_input, min_support=0.01,use_colnames=True)
+    timings['Fp-growth'].append(time.time() - start_time)
+    return fp_result
+
+for i in range(50):
+    compute_apriori_mlxtend()
+    compute_fp_growth()
+    compute_efficient_apriori()
 
 # Timings comparison on the overall dataset
-timings
+time = pd.DataFrame.from_dict(timings)
+time.mean()
 
 # Comparison between results
-apriori_1 = item_found.sort_values(['occurrences'],ascending=False).reset_index(drop=True)
-apriori_2 = frequent_itemsets.sort_values(['support','n_items'],ascending=[False,True]).reset_index(drop=True)
-apriori_3 = fp_result.sort_values(['support'],ascending=False).reset_index(drop=True)
+apriori_1 = compute_apriori_mlxtend().sort_values(['occurrences'],ascending=False).reset_index(drop=True)
+apriori_2 = compute_efficient_apriori().sort_values(['support','n_items'],ascending=[False,True]).reset_index(drop=True)
+apriori_3 = compute_fp_growth().sort_values(['support'],ascending=False).reset_index(drop=True)
 
 # All of them return the exact same itemsets with the same support
 pd.concat([apriori_1,apriori_2,apriori_3],axis=1).drop(['n_items'],1)
