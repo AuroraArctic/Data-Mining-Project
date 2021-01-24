@@ -5,18 +5,23 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 import nltk
+# nltk.download('stopwords')
 import re
+import pickle
 import numpy as np
 import datetime as dt
+import sys
 
 # Data Import
 # ====================================================
-df_name = 'covid19_tweets.csv'
+
+# Import of the dataset as csv
 def import_dataset(name):
     df = pd.read_csv(name,engine='python')
     df = df[['created_at','tweet']]
     df = df.rename(columns={'created_at':'date','tweet':'text'})
     df.date = pd.to_datetime(df["date"]).dt.strftime('%Y-%m-%d')
+    print('Dataset imported')
     return df
 
 # Tweet text pre-processing
@@ -61,21 +66,23 @@ def text_processing(text):
 # Cleaning of the column text
 def clean_tweets(df):
     temp = []
+    print('Starting cleaning...')
     for tweet in df.text:
         temp.append(text_processing(tweet))
     new_columns = {'date':df.date,'text':temp}
     df_new = pd.DataFrame(new_columns)
-
-    # Saving the dataframe inside file
-    df_new.to_csv('USA_election_2020/input.csv',index=False)
-    import pickle
-    with open('data/input','wb') as f:
-        pickle.dump(df,f)
+    print('Dataset cleaned')
     return df_new
 
 # Saving the new dataset
-df = clean_tweets(import_dataset(df_name))
-df.to_csv('data/input.csv',index=False) # Saving as csv to be readable
-import pickle
-with open('data/input','wb') as f:
-    pickle.dump(df,f)
+def save_results():
+    df_name = str(sys.argv[1]) # Path of the dataset to process
+    df = clean_tweets(import_dataset(df_name))
+    print('Saving dataset...')
+    df.to_csv('../data/input.csv',index=False) # Saving as csv to be readable
+    with open('../data/input','wb') as f: # Saving in data type saving format
+        pickle.dump(df,f)
+    print('Done.')
+
+# Erase comment in order to execute this script with command line
+# save_results()
