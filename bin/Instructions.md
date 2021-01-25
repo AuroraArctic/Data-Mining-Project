@@ -9,6 +9,8 @@ First of all, the latest version of Python should be installed in the user devic
 pip install -r requirements.txt
 ```
 
+Notice that, if the user desires to execute also other py scripts contained inside the `src` folder, additional packages are necessary, which are specified in `src/requirements.txt` and can be installed in the same way by executing the command in the different directory.
+
 ## Execution
 After all requirements are installed, the user should open a terminal inside the directory `bin` and execute `find_topics.py` by writing:
 
@@ -19,7 +21,7 @@ python find_topics.py
 However, the execution described above uses default parameters, set as:
 
 - **support = 0.02** (proportion of tweets in which the topic can be found);
-- **lines=0** (number of lines that will be visualized in the terminal at the end of the execution, as preview);
+- **lines = 0** (number of lines that will be visualized in the terminal at the end of the execution, as preview);
 - **days = 1** (minimum number of days in which we can find the topic);
 - **min_items = 1** (minimum number of words inside a topic);
 - **max_items = 4** (maximum number of words inside a topic).
@@ -40,4 +42,4 @@ Notwithstanding the possibility to customize parameters to filter results, it is
 
 In case the parameter **lines** is omitted (=0), no preview will be provided; if it has a value higher than the total number of lines in the dataset returned, this will be showed entirely.
 
-The output will be save inside the path `data/output_files/`, with names `output.csv`, which is the readable format. The other format can be used for additional analysis and imported through `pickle` package, since it maintains data types of columns without the necessity of parsing them.
+The output will be saved inside the path `data/output_files/`, with names `output.csv`, which is the readable format. The other format can be used for additional analysis and imported through `pickle` package, since it maintains data types of columns without the necessity of parsing them.

@@ -78,7 +78,7 @@ def compute_fp_growth():
     timings['Fp-growth'].append(time.time() - start_time)
     return fp_result
 
-for i in range(50):
+for i in range(100):
     compute_apriori_mlxtend()
     compute_fp_growth()
     compute_efficient_apriori()

@@ -53,7 +53,7 @@ df.groupby('date').count()['tweet']
 
 # Clustering
 # ========================================
-with open('../data/input','rb') as f:
+with open('../data/input_files/input','rb') as f:
     df = pickle.load(f)
 tweet = [' '.join(x) for x in df.text]
 
@@ -73,7 +73,7 @@ import matplotlib.pyplot as plt
 plt.plot(range(1,11), values)
 plt.title('Elbow Method')
 plt.xlabel('Number of Clusters')
-plt.ylabel('Inertia')
+plt.ylabel('Inertia (sum of squared distances)')
 plt.show()
 
 # Model fitting
